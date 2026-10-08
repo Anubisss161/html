@@ -1,0 +1,459 @@
+﻿This conversation was generated with Duck.ai (https://duck.ai) using OpenAI's GPT-6 Luna Model. AI chats may display inaccurate or offensive information (see https://duckduckgo.com/duckai/privacy-terms for more info).
+
+====================
+
+User prompt 1 of 16 - 06/10/2026, 13:10:49:
+im making a hypothetical restaurant html page, im thinking of the food being turkish, what would be some good names
+
+GPT-6 Luna:
+<!-- **Checking name classifications**
+
+I see that I need to provide answers regarding names. Maybe I should consider using a checklist to ensure I'm addressing everything properly. While the user’s request is direct, I'm wondering if I should have specified their language or environment proficiency. I think it might be good to include related search terms and invoke those at the end. However, I don't think web access is necessary for this task since it's more creative. I should provide some categories. -->
+Here are some Turkish restaurant name ideas, grouped by style:
+
+**Traditional**
+- Sofra Istanbul
+- Anatolia Table
+- Sultan’s Kitchen
+- The Bosphorus Table
+- Ocakbaşı House
+- Ege Sofrası
+- Anadolu Lokantası
+- Ottoman Hearth
+
+**Modern**
+- Kebab & Co.
+- Spice of Anatolia
+- Ember Istanbul
+- Mezze
+- Copper & Sumac
+- Pera Kitchen
+- Simit Social
+- Charcoal & Olive
+
+**Warm and casual**
+- Auntie’s Sofra
+- The Little Baklava
+- Olive & Pide
+- Istanbul Bites
+- The Mezze Corner
+- Pide Street
+- Turkish Table
+- Baklava Café
+
+**Elegant**
+- The Golden Tulip
+- Pera Dining
+- Bosphorus
+- The Anatolian Room
+- Saffron & Silk
+- House of Iznik
+- Blue Mosque Kitchen
+- Ottoman Rose
+
+**Playful**
+- Kebabsolutely
+- Pide & Seek
+- Holy Baklava
+- Grill Me Softly
+- Sumac & Roll
+- Doner Matter
+- You Had Me at Mezze
+- The Great Kebab
+
+My strongest picks for an HTML project are **Copper & Sumac**, **Pera Kitchen**, **Sofra Istanbul**, **Olive & Pide**, and **Spice of Anatolia**. “Sofra” means “table” or “dining table” in Turkish, making it especially fitting for a restaurant brand.
+
+For a more authentic feel, use words such as **sofra** (table), **ocak** (hearth/fireplace), **anadolu** (Anatolia), **meze** (small dishes), **pide** (Turkish flatbread), or **lokanta** (restaurant/eatery).
+
+**Debugging tip:** If you use the name in a page title or navigation menu, check how it looks at both desktop and mobile widths before finalizing it.
+
+--------------------
+
+User prompt 2 of 16 - 06/10/2026, 13:24:31:
+whats a good font for the logo
+
+GPT-6 Luna:
+A strong choice would be **Cinzel Decorative**. It has an elegant, slightly Ottoman-inspired appearance that works well for a Turkish restaurant logo without being difficult to read.
+
+Other good options:
+
+- **Playfair Display** — refined and upscale
+- **Cormorant Garamond** — elegant and traditional
+- **Bodoni Moda** — luxurious and modern
+- **DM Serif Display** — bold, warm, and readable
+- **Marcellus** — classical with subtle Mediterranean character
+- **Lora** — friendly and polished
+- **Rye** — rustic and decorative, best for a casual restaurant
+
+For example, if your restaurant is called **Copper & Sumac**:
+
+```html
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+
+<style>
+  .logo {
+    font-family: "Cinzel Decorative", serif;
+    font-size: 2.2rem;
+    letter-spacing: 0.08em;
+    color: #b87333;
+  }
+
+  body {
+    font-family: "Inter", sans-serif;
+  }
+</style>
+
+<h1 class="logo">Copper &amp; Sumac</h1>
+```
+
+For a more modern look, use **Playfair Display** for the logo and **Montserrat** or **Inter** for the rest of the page. Avoid overly decorative fonts for long text; reserve them for the logo or headings.
+
+--------------------
+
+User prompt 3 of 16 - 06/10/2026, 13:58:20:
+i've installed git, and commited, where does this go?
+
+GPT-6 Luna:
+<!-- **Explaining local vs. remote repositories**
+
+I need to clarify the difference between local and remote repositories. A local repo is stored on your computer, while a remote one is hosted online, often on platforms like GitHub. For instance, when you make commands like `git commit`, the changes are stored in the `.git` directory of your local repo. It's important to keep this explanation concise and clear, and I might want to provide relevant commands to illustrate these concepts! -->
+When you commit with Git, the commit is stored **locally on your computer**, inside the hidden `.git` folder in your project directory. It does not automatically go online.
+
+Typical workflow:
+
+```bash
+git add .
+git commit -m "Create restaurant homepage"
+```
+
+Your files remain in the project folder, while Git stores the commit history in:
+
+```text
+your-project/
+├── index.html
+├── style.css
+└── .git/
+```
+
+To see your commit:
+
+```bash
+git log --oneline
+```
+
+To put the project on GitHub or another remote service, create a repository there and connect it:
+
+```bash
+git remote add origin https://github.com/YOUR-USERNAME/YOUR-REPOSITORY.git
+git branch -M main
+git push -u origin main
+```
+
+After that, future commits can usually be uploaded with:
+
+```bash
+git push
+```
+
+You can check whether a remote is connected with:
+
+```bash
+git remote -v
+```
+
+If that command displays nothing, your commit is currently only on your computer.
+
+--------------------
+
+User prompt 4 of 16 - 06/10/2026, 14:05:02:
+export this chat as a .txt file
+
+GPT-6 Luna:
+<!-- **Searching for Duck product info**
+
+I need to find information about Duck products, so I’ll perform a web search for relevant help pages. It looks like I won’t be able to directly export anything, but I can still gather information to summarize. I can use copy and paste for the details I need. Let’s get started with the search to find the answers I’m looking for! -->
+<!-- **Considering chat export options**
+
+I need to clarify that I can't directly create a downloadable file, as the system guidelines say not to claim anything other than text. I can provide the content in a code block for the user to save. I’m thinking about summarizing the whole chat transcript, but since this is an imperative question, I can't actually access or export anything directly. Maybe I can suggest copying and pasting the conversation into a text editor instead? I'll also consider offering a link to a help page for guidance. -->
+I can’t directly attach or export a `.txt` file from this chat. You can save it manually:
+
+1. Select the conversation text.
+2. Copy it with **Ctrl+C** or **Cmd+C**.
+3. Open Notepad, TextEdit, or another plain-text editor.
+4. Paste the text.
+5. Choose **Save As**.
+6. Name it something like `turkish-restaurant-chat.txt`.
+7. If prompted for a format, choose **Plain Text** or **UTF-8**.
+
+You can also use the chat’s **three-dot menu** to create a share link for the conversation, but that produces a web link rather than a `.txt` file. [1]
+
+Read More
+[1] Sharing Chats in Duck.ai — https://duckduckgo.com/duckduckgo-help-pages/duckai/sharing-chats-in-duckai
+
+--------------------
+
+User prompt 5 of 16 - 06/10/2026, 16:48:05:
+give me a slogan in slovenian for the restaurant, 2-3 sentences long
+
+GPT-6 Luna:
+Okus Anatolije na vašem krožniku. Pridite in doživite pristne turške okuse, pripravljene s toplino in tradicijo.
+
+--------------------
+
+User prompt 6 of 16 - 06/10/2026, 16:48:16:
+continue it a bit
+
+GPT-6 Luna:
+Okus Anatolije na vašem krožniku. Pridite in doživite pristne turške okuse, pripravljene s toplino in tradicijo. Vsaka jed pripoveduje zgodbo o bogati kulturi, dišečih začimbah in gostoljubju, ki povezuje ljudi za isto mizo.
+
+--------------------
+
+User prompt 7 of 16 - 07/10/2026, 23:45:10:
+   <h1>Jagnji Kebap</h1>
+                    <img alt="slika Kebapa" src="slike/kebap.jpg">
+                    <figcaption>Jed 1 - Kebap</figcaption>
+                </figure>
+            </article>
+            <article>
+                <figure>
+                    <h1>kiymalı pide - Pita z mesom</h1>
+                <img alt="slika Pite, polnjene z mesom" src="slike/pitameso.jpg">
+                    <figcaption>Jed 2 - kiymalı pide - Pita z mesom</figcaption>
+
+                </figure>
+            </article>
+            <article>
+                <figure>
+                    <h1>Baklava</h1>
+                <img alt="slika Baklave z pistacijevem posipom" src="slike/baklava.jpg">
+                <figcaption>Jed 2 - Baklava</figcaption>
+naredi mi opis za te tri jedi, ne daj mi kode, ampak samo tekst oz. besedilo
+
+GPT-6 Luna:
+<!--  -->
+**Jagnječji kebap**  
+Sočni koščki jagnjetine, pečeni na žaru in obogateni z dišečimi turškimi začimbami. Postreženi so s svežo zelenjavo, solato in nežno omako, ki dopolni njihov bogat okus.
+
+**Kiymalı pide – pita z mesom**  
+Tradicionalna turška pita iz tankega, hrustljavo zapečenega testa, obložena z začinjenim mletim mesom, paradižnikom, papriko in čebulo. Jed je okusna, aromatična in odlična za ljubitelje pristnih turških okusov.
+
+**Baklava**  
+Priljubljena turška sladica iz tankih plasti hrustljavega testa, polnjenih s pistacijami in prelitih s sladkim sirupom. Njena kombinacija hrustljave teksture, oreščkov in nežne sladkobe ustvari popoln zaključek obroka.
+
+--------------------
+
+User prompt 8 of 16 - 08/10/2026, 00:06:26:
+zmisli si nekaj predjedi
+
+GPT-6 Luna:
+<!--  -->
+- **Hummus** – Kremast namaz iz čičerike, tahinija, limoninega soka in česna. Postrežen je s svežim kruhom in olivnim oljem.
+
+- **Mercimek çorbası – lečina juha** – Topla in nežno začinjena juha iz rdeče leče, korenja, čebule in turških začimb. Je lahka, a zelo okusna predjed.
+
+- **Sigara böreği – sirovi zvitki** – Hrustljavi zvitki iz tankega testa, polnjeni z belim sirom in svežimi zelišči. Postreženi so s hladno jogurtovo omako.
+
+- **Imam bayıldı** – Pečeni jajčevci, polnjeni s čebulo, paradižnikom, česnom in olivnim oljem. Jed je nežna, aromatična in primerna tudi za vegetarijance.
+
+- **Dolma** – Trtni listi, polnjeni z rižem, zelišči in začimbami. Postreženi so ohlajeni z nežno limonino omako.
+
+- **Acılı ezme** – Pikantna turška solata iz paradižnika, paprike, čebule, peteršilja in čilija. Odlično se poda k svežemu kruhu in drugim predjedem.
+
+- **Kisir** – Osvežilna solata iz bulgurja, paradižnika, peteršilja, limone in granatnega jabolka. Njena rahlo kisla in aromatična kombinacija je značilna za turško kuhinjo.
+
+- **Pečeni halloumi** – Rezine slanega sira, pečene do zlato-rjave barve in postrežene s svežo zelenjavo ter medeno-limonino omako.
+
+--------------------
+
+User prompt 9 of 16 - 08/10/2026, 00:10:06:
+daj mi alergene za naslednje jedi : Hummus  Mercimek çorbası – lečina juha  Dolma Kisir Pečeni halloumi Imam bayıldı 
+
+GPT-6 Luna:
+<!-- **Checking allergen info**
+
+I need to provide allergen info for Slovenian recipes, keeping in mind that it can vary. It’s crucial to have current and accurate information, so I might mention the importance of verifying recipes. It seems I should list EU allergen numbers, but maybe I won’t need web resources since food allergens stay relevant over time. However, these can depend on specific dishes. I’ll provide likely allergens and maybe use the phrase "lahko vsebuje". -->
+Alergeni so odvisni od recepta in uporabljenih sestavin, vendar so za te jedi najverjetneje naslednji:
+
+- **Hummus** – **sezam** zaradi tahinija. Lahko vsebuje tudi **gluten**, če je postrežen s kruhom ali pito.
+- **Mercimek çorbası – lečina juha** – običajno brez glavnih alergenov. Lahko vsebuje **mleko**, če je dodano maslo ali jogurt, ter **gluten**, če je pripravljena z moko ali postrežena s kruhom.
+- **Dolma** – običajno brez glavnih alergenov. Lahko vsebuje **mleko**, če je postrežena z jogurtom, oziroma **oreščke**, če so dodani pinjoli.
+- **Kisir** – vsebuje **gluten**, ker je pripravljen iz bulgurja. Lahko vsebuje **gorčico**, če je dodana posebna omaka ali začimbna pasta.
+- **Pečeni halloumi** – vsebuje **mleko**. Lahko vsebuje tudi **jajca**, če je sir obdan s paniranjem.
+- **Imam bayıldı** – običajno brez glavnih alergenov. Lahko vsebuje **gluten**, če je postrežen s kruhom, in **oreščke**, če so dodani pinjoli ali drugi oreščki.
+
+Za jedilnik lahko uporabiš tudi krajšo različico:
+
+| Jed | Alergeni |
+|---|---|
+| Hummus | Sezam; lahko vsebuje gluten |
+| Mercimek çorbası | Lahko vsebuje mleko in gluten |
+| Dolma | Lahko vsebuje mleko in oreščke |
+| Kisir | Gluten; lahko vsebuje gorčico |
+| Pečeni halloumi | Mleko; lahko vsebuje jajca |
+| Imam bayıldı | Lahko vsebuje gluten in oreščke |
+
+Pri javnem jedilniku označi alergene glede na dejanski recept, saj lahko že majhna sprememba sestavin spremeni seznam alergenov.
+
+--------------------
+
+User prompt 10 of 16 - 08/10/2026, 00:16:57:
+make up prices for food <tr>
+                            <td>Hummus z Kruhom</td>
+                            <td>Kremast namaz iz čičerike, tahinija, limoninega soka in česna. Postrežen je s svežim kruhom in olivnim oljem.</td>
+                            <td>Sezam, gluten</td>
+                            <td>x</td>
+                        </tr>
+                        <tr>
+                            <td>Imam bayıldı - Pečeni jajčevci</td>
+                            <td>Pečeni jajčevci, polnjeni s čebulo, paradižnikom, česnom in olivnim oljem. Jed je nežna, aromatična in primerna tudi za vegetarijance.</td>
+                            <td>Gluten in Oreščki</td>
+                        </tr>
+                        <tr>
+                            <td>Pečeni halloumi</td>
+                            <td>Rezine slanega sira, pečene do zlato-rjave barve in postrežene s svežo zelenjavo ter medeno-limonino omako.</td>
+                            <td>Mleko, Jajca</td>
+                        </tr>
+                        <tr>
+                            <td>Kisir</td>
+                            <td>Osvežilna solata iz bulgurja, paradižnika, peteršilja, limone in granatnega jabolka. Njena rahlo kisla in aromatična kombinacija je odlična izbira za koga koli.</td>
+                         <td>Gluten</td>
+                        </tr>
+                        <tr>
+                            <td>Dolma</td>
+                             <td>Trtni listi, polnjeni z rižem, zelišči in začimbami. Postreženi so ohlajeni z nežno limonino omako.</td>
+
+                            <td>Gluten in Oreščki</td>
+                        </tr>
+                        <tr>
+                            <td>Mercimek çorbası - lečina juha</td>               
+                            <td>Topla in nežno začinjena juha iz rdeče leče, korenja, čebule in turških začimb. Je lahka, a zelo okusna predjed.</td>
+                            <td>Mleko in Gluten</td>
+                        </tr>
+
+GPT-6 Luna:
+<!-- **Thinking about price formatting**
+
+I need to provide prices, probably in euros, but the user might want made-up prices instead. They've included some items and are missing others. I wonder if I should include a code snippet for mapping? Since they asked for food prices, could I just provide the exact prices for insertion? It seems I should suggest prices and show the relevant lines instead of doing a full rewrite. Maybe I can list them out. -->
+Predlagane cene za predjedi:
+
+- Hummus z kruhom — **4,90 €**
+- Imam bayıldı – pečeni jajčevci — **6,50 €**
+- Pečeni halloumi — **7,20 €**
+- Kisir — **5,50 €**
+- Dolma — **5,90 €**
+- Mercimek çorbası – lečina juha — **4,50 €**
+
+V tabelo dodaj stolpec za ceno, na primer:
+
+```html
+<th>Cena</th>
+```
+
+Nato dodaj ceno v vsako vrstico:
+
+```html
+<td>4,90 €</td>
+```
+
+Pri prvi jedi lahko zamenjaš:
+
+```html
+<td>x</td>
+```
+
+z:
+
+```html
+<td>4,90 €</td>
+```
+
+Za bolj urejeno tabelo naj bo cena zadnji stolpec pri vseh jedeh.
+
+--------------------
+
+User prompt 11 of 16 - 08/10/2026, 00:17:11:
+dont gimmie code ever
+
+GPT-6 Luna:
+Understood. I’ll provide explanations and text without code unless you specifically ask for it.
+
+--------------------
+
+User prompt 12 of 16 - 08/10/2026, 00:21:28:
+glavne jedi, naredi tabelo z katere lahko copy pasteam 
+
+GPT-6 Luna:
+<!-- **Creating a Slovenian menu table**
+
+I need to create a Markdown table for Slovenian main dishes without using any code. I’m thinking of including around 6 dishes. I should detail each dish with its name, a brief description, allergens, and possibly price. It’s important to format this neatly since the user wants an easy copy-paste option. I’m focusing on providing clear, concise, and informative content without extra coding language. Let’s get this done! -->
+| Glavna jed | Opis | Alergeni | Cena |
+|---|---|---|---:|
+| Jagnječji kebap | Sočni koščki jagnjetine, pečeni na žaru in začinjeni z dišečimi turškimi začimbami. Postreženi so s svežo zelenjavo, solato in nežno omako. | Mleko | 13,90 € |
+| Kiymalı pide – pita z mesom | Tradicionalna turška pita iz tankega testa, obložena z začinjenim mletim mesom, paradižnikom, papriko in čebulo. | Gluten, mleko | 11,50 € |
+| Tavuk şiş – piščančja nabodala | Marinirani koščki piščanca, pečeni na žaru in postreženi z rižem, svežo zelenjavo ter jogurtovo omako. | Mleko | 12,90 € |
+| Döner kebab na krožniku | Nežno pečeno meso döner, postreženo s pomfrijem, solato, paradižnikom in domačo omako. | Mleko | 12,50 € |
+| Köfte – turške mesne kroglice | Začinjene mesne kroglice iz mletega mesa, pečene na žaru in postrežene z bulgurjem ter svežo zelenjavo. | Gluten | 12,90 € |
+| İskender kebap | Rezine döner mesa na koščkih kruha, prelite s paradižnikovo omako, stopljenim maslom in jogurtom. | Gluten, mleko | 14,50 € |
+| Mantı – turški cmoki | Majhni polnjeni cmoki z mesom, postreženi z jogurtom, česnom, maslom in pikantno omako. | Gluten, mleko, jajca | 11,90 € |
+| Zelenjavni güveç | Počasi pečena zelenjava s paradižnikom, papriko, čebulo in turškimi začimbami. Primerna je tudi za vegetarijance. | Brez glavnih alergenov | 10,90 € |
+| Adana kebap | Pikanten kebap iz mletega mesa, pečen na žaru in postrežen z bulgurjem, solato ter pečeno zelenjavo. | Gluten | 13,50 € |
+
+--------------------
+
+User prompt 13 of 16 - 08/10/2026, 00:29:03:
+še eno za sladice
+
+GPT-6 Luna:
+| Sladica | Opis | Alergeni | Cena |
+|---|---|---|---:|
+| Baklava | Hrustljava sladica iz tankih plasti testa, polnjena s pistacijami in oreščki ter prelita s sladkim sirupom. | Gluten, oreščki, mleko | 5,50 € |
+| Künefe | Topla sladica iz tankih rezancev testa, polnjena z nežnim sirom in prelita s sladkim sirupom. | Gluten, mleko | 6,50 € |
+| Sütlaç – turški rižev puding | Kremast rižev puding iz mleka, riža in vanilje, posut s cimetom. | Mleko | 4,90 € |
+| Lokum | Mehki turški bonboni z okusom vrtnice, limone ali granatnega jabolka, posuti s sladkorjem v prahu. | Lahko vsebuje oreščke | 3,90 € |
+| Halva s pistacijami | Tradicionalna sladica iz sezamove paste, sladkorja in pistacij. | Sezam, oreščki | 4,50 € |
+| Dondurma – turški sladoled | Gosti turški sladoled z nežnim okusom vanilje, postrežen s pistacijami in sladkim prelivom. | Mleko, oreščki | 5,20 € |
+| Baklava z vaniljevim sladoledom | Hrustljava baklava s pistacijami, postrežena s kepico kremastega vaniljevega sladoleda. | Gluten, oreščki, mleko | 7,20 € |
+
+--------------------
+
+User prompt 14 of 16 - 08/10/2026, 12:10:10:
+
+Vsak recept vsebuje: naziv (h2), sliko jedi s pripisom, čas priprave in število porcij, podnaslov "Sestavine" z neoštevilčenim seznamom sestavin (vsaka s količino in enoto, npr. "200 g moke") ter podnaslov "Postopek" z oštevilčenim seznamom korakov priprave.
+naredi mi tabelo, z katere lahko kopiram recepte, Baklava, Jagnji Kebap in Mantı 
+
+GPT-6 Luna:
+<!-- **Structuring recipe table**
+
+I need to create a table that includes recipe content, but it looks like the requirement specifies a certain structure for each recipe. They want a direct table copy without any code. Markdown tables can be tricky for long lists, but I need clear table columns for Slovenian ingredients, quantities, and steps numbered within cells. I might also need to correct “Jagnječji kebap.” Additionally, there should be image placeholders along with captions labeled as "Slika: ..." for the recipes. -->
+| Recept | Slika s pripisom | Čas priprave | Število porcij | Sestavine | Postopek |
+|---|---|---:|---:|---|---|
+| **Baklava** | Slika baklave<br><br>Pripis: Hrustljava baklava s pistacijami | 60 minut | 8 porcij | 250 g listnatega testa<br>200 g pistacij<br>150 g masla<br>200 g sladkorja<br>150 ml vode<br>2 žlici limoninega soka<br>1 žlica medu | 1. Pistacije drobno nasekljaj.<br>2. Pekač premaži z maslom in vanj položi plast testa.<br>3. Testo premaži z maslom in dodaj plast pistacij. Postopek ponavljaj, dokler ne porabiš sestavin.<br>4. Baklavo nareži na trikotnike ali kvadrate.<br>5. Peči jo približno 35–40 minut pri 180 °C, dokler ne postane zlato-rjava.<br>6. Medtem zavri vodo, sladkor, limonin sok in med. Kuhaj približno 5 minut.<br>7. Vroč sirup prelij čez pečeno baklavo in jo pred serviranjem ohladi. |
+| **Jagnječji kebap** | Slika jagnječjega kebapa<br><br>Pripis: Sočni jagnječji kebap z zelenjavo | 45 minut | 4 porcije | 600 g mlete jagnjetine<br>1 čebula<br>2 stroka česna<br>1 žlička mlete paprike<br>1 žlička kumine<br>1 žlička soli<br>½ žličke črnega popra<br>2 žlici olivnega olja<br>4 lepinje<br>200 g sveže zelenjave | 1. Čebulo in česen drobno sesekljaj.<br>2. V skledi zmešaj jagnjetino, čebulo, česen, papriko, kumino, sol in poper.<br>3. Zmes dobro pregneti in jo za 20 minut postavi v hladilnik.<br>4. Oblikuj podolgovate kebabe oziroma jih natakni na lesena ali kovinska nabodala.<br>5. Kebabe premaži z olivnim oljem.<br>6. Peci jih na žaru ali v ponvi približno 10–12 minut in jih med pečenjem obračaj.<br>7. Postrezi jih v lepinji s svežo zelenjavo in omako. |
+| **Mantı – turški cmoki** | Slika turških cmokov mantı<br><br>Pripis: Domači turški cmoki z jogurtom in česnom | 90 minut | 4 porcije | 300 g moke<br>1 jajce<br>100 ml vode<br>½ žličke soli<br>250 g mletega mesa<br>1 manjša čebula<br>½ žličke črnega popra<br>½ žličke soli<br>250 g grškega jogurta<br>2 stroka česna<br>50 g masla<br>1 žlička sladke paprike<br>1 žlica olivnega olja | 1. Iz moke, jajca, vode in soli zamesi gladko testo.<br>2. Testo pokrij in ga pusti počivati približno 30 minut.<br>3. Za nadev zmešaj mleto meso, drobno sesekljano čebulo, sol in poper.<br>4. Testo tanko razvaljaj in ga nareži na majhne kvadratke.<br>5. Na sredino vsakega kvadratka dodaj malo mesnega nadeva in robove dobro stisni.<br>6. Cmoke kuhaj v osoljeni vreli vodi približno 8–10 minut.<br>7. Jogurt zmešaj z zdrobljenim česnom.<br>8. Na ponvi stopi maslo, dodaj papriko in olivno olje ter na kratko prepraži.<br>9. Kuhane cmoke postrezi z jogurtovo omako in jih prelij s paprikovim maslom. |
+
+--------------------
+
+User prompt 15 of 16 - 08/10/2026, 14:02:40:
+give me some text for o restavraciji on my main page
+
+GPT-6 Luna:
+<!-- **Creating Slovenian text**
+
+I need to prepare a copyable Slovenian text. It seems like there's a typo with “o” that needs correction. I think it’d be helpful to include a title and an introduction for the paragraph. I won't include any coding—just plain text that the user can easily copy. Let's make sure it’s clear and effective for the user’s needs! -->
+### O restavraciji
+
+Dobrodošli v naši turški restavraciji, kjer vas pričakujejo pristni okusi in bogata kulinarična tradicija Anatolije. Naše jedi pripravljamo iz svežih sestavin, aromatičnih začimb in po tradicionalnih receptih, ki se prenašajo iz roda v rod.
+
+Od sočnega kebapa in hrustljave pide do domače baklave – vsaka jed je pripravljena z veliko pozornosti in ljubezni. Ustvarili smo prijeten prostor, kjer lahko uživate v okusni hrani, toplem gostoljubju in prijetnem druženju. Vabimo vas, da z nami odkrijete raznolikost in bogastvo turške kuhinje.
+
+--------------------
+
+User prompt 16 of 16 - 08/10/2026, 23:33:29:
+write some short text before the jedilnik
+
+GPT-6 Luna:
+### Naš jedilnik
+
+Odkrijte bogate okuse turške kuhinje, pripravljene iz svežih sestavin in tradicionalnih receptov. Izbirate lahko med okusnimi predjedmi, glavnimi jedmi, sladicami in drugimi pristnimi turškimi specialitetami.
