@@ -8,6 +8,7 @@
     --poudarek : #8ca363;
     --besedilo : #3B2416 ;
     --background : #F7F0E6;
+    --food_background : #ecdecb;
 }
 header {
   position: sticky;
@@ -47,7 +48,83 @@ main{
   margin-inline: auto;
 
 }
+/*footer*/
 footer{
     background-color: #3B2416;
     color: #F7F0E6 ;
+}/*index*/
+
+/* index background img*/
+.index_section{ 
+    min-height: 60vh; 
+    background-image: url("../slike/background.jpg");
+    background-position: center;
+    background-size:cover;
+    text-align: center;
+}
+.index_section *{
+    background-color: rgba(255, 248, 237, 0.8) ;
+}
+/*jedi */
+.izpostavljene {
+    display: grid;
+    gap: 16px;
+}
+
+.izpostavljene h2 { /* bscly makea item 1 ( h2 v ton primere ) ka spanna 4 columne, torej se jedi vrede prikazejo*/
+    grid-column: 1 / 4;
+}
+
+.jedi {
+    background-color: var(--food_background);
+    border-radius: 10px;
+    border-color: var(--primary);
+    border-width: 8px;
+    border-style: groove;
+    box-shadow: 10px 10px;
+    margin-bottom: 10%;
+    padding: 12px;
+
+}
+
+.jedi figure{
+    margin: 0;
+}
+
+.jedi img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.new{
+    position: relative;
+    top: 30px;
+    left: 185px;
+    padding: 5px 5px;
+    background-color: var(--background);
+    border-radius: 12px;
+}
+
+/*jedilnik.html*/
+.jedilnik table{
+    width:100%;
+    border-collapse: collapse;
+    border-color: var(--besedilo);
+    border-width: 2px;
+    border-style:dashed;
+    
+}
+.jedilnik th{
+    background-color: var(--primary);
+}.jedilnik tr:hover{
+    background-color: #7ed669;
+}
+.colored_row{
+
+    background-color: var(--poudarek);
+}
+td:last-child{
+    text-align: right;
+        width: 70px;
 }
