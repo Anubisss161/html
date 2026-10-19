@@ -1,0 +1,53 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+*{
+    box-sizing: border-box;
+}
+:root{
+    --primary : #C46A3A;
+    --poudarek : #8ca363;
+    --besedilo : #3B2416 ;
+    --background : #F7F0E6;
+}
+header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  background-color: var(--background);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+header nav ul{
+    list-style-type: none;
+}
+header nav ul li a{
+    text-decoration: none;
+    color: var(--besedilo);
+}
+header nav ul li a:hover{
+    background-color: var(--poudarek);
+
+}
+.aktivno{
+    color: var(--primary);
+    text-decoration-line:underline;
+    text-decoration-style: wavy;
+}
+body {
+  background-color: var(--background);
+  color: var(--besedilo);
+  font-family: "Lato";
+  font-size: 1rem;
+}
+main{
+  width: 100%;
+  max-width: 1100px;
+  margin-inline: auto;
+
+}
+footer{
+    background-color: #3B2416;
+    color: #F7F0E6 ;
+}
