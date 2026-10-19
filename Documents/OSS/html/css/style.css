@@ -89,6 +89,7 @@ footer{
 
 .jedi figure{
     margin: 0;
+    position: relative;
 }
 
 .jedi img {
@@ -98,9 +99,11 @@ footer{
     border-radius: 10px;
 }
 .new{
-    position: relative;
-    top: 30px;
-    left: 185px;
+    text-transform: capitalize;
+    font-size: 1.25rem;
+    position: absolute ;
+    right: 10px;
+    top: 170px;
     padding: 5px 5px;
     background-color: var(--background);
     border-radius: 12px;
@@ -126,5 +129,31 @@ footer{
 }
 td:last-child{
     text-align: right;
-        width: 70px;
+    width: 70px;
 }
+/*rezervacija*/
+.rezevervacija_form fieldset {
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  gap: 12px;
+  align-items: center;
+}
+
+.rezevervacija_form p { /*najbolj annoying thing ever*/
+  display: contents; 
+}
+
+.rezevervacija_form label {
+  font-size: 1.2rem;
+}
+
+.rezevervacija_form input,
+.rezevervacija_form select {
+  width: 100%;
+  padding: 9px;
+  border-width: 1px;
+  border-radius: 7px;
+  border-style: groove;
+  border-color: var(--poudarek);
+}
+
