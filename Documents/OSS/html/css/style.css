@@ -27,6 +27,7 @@ header {
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     min-height: 120px;
+    z-index: 100;
  
 }
 
@@ -41,7 +42,6 @@ header nav ul {
 
 header nav ul li a{
     text-decoration: none;
-    color: var(--besedilo);
     padding:10px;
     color:var(--background)
 }
@@ -243,7 +243,6 @@ td:last-child{
     width: 100%;
     min-height: 10rem;
     margin: 0;
-    resize: vertical;
     font-weight: bold;
     color: var(--besedilo);
     background-color: var(--background );
@@ -312,14 +311,13 @@ td:last-child{
     border-color: var(--besedilo);
     border-width: 3px;
 }
-.recepti ul{
+.recepti > ul{
     display: flex;
+    list-style: none;
 }
 .recepti li{
-    list-style: none;
-    display: flexbox;
     margin-left: 0.35rem; 
-    margin-right: 0.35rem;
+
     
 }
 .recepti .kazalo:hover{ 
@@ -331,18 +329,59 @@ td:last-child{
     border-color: var(--besedilo);
     border-width: 8px;
     border-style: inset;
-    box-shadow: 10px 10px;
-    margin-bottom: 10%;
-    padding: 12px;
+    box-shadow: 12px 12px 12px;
+    padding: 2rem;  
+       display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background: var(--food_background) 
+
 }
-.recepti figure{
+.recepti article h2, .recepti .postopek {
+    grid-column: 1 / -1;
+    padding-bottom: 6px;
+    border-bottom: 2px solid var(--primary);
+    list-style: decimal;
+}
+.recepti figure {
     margin: 0;
-    position: relative;
 }
 
 .recepti img {
-    width: 30%;
-    height: 400px;
+    width: 100%;
+    max-height: 350px;
     object-fit: cover;
-    border-radius: 10px;
+    border-radius: 7px;
+    border-width: 2px;
+    border-color: var(--besedilo);
+}
+.recepti article a{
+    position: relative;
+    left:190%;
+    grid-column: 1 / -1;
+    color:var(--background);
+    font-weight: 700;
+    text-decoration: none;
+    background-color: var(--besedilo);
+    border-radius: 15px;
+    padding:0.55rem;
+    border-width: 4px;
+    border-color: var(--border_compl);
+    border-style: groove;
+}
+.recepti .sestavine ul {
+    display: block;
+    padding-left: 1.4rem;
+}
+.recepti article a:hover{
+    background: var(--poudarek);
+}
+.recepti article a:active{
+    background-color: var(--navbar_complementary);
+}
+.recepti .sestavine h2, .recepti .postopek h2, .recepti h2{
+        font-weight: 700;
+        font-size: 1.7rem;
 }
