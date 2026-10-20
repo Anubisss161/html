@@ -7,63 +7,100 @@
     --primary : #C46A3A;
     --poudarek : #8ca363;
     --besedilo : #3B2416 ;
-    --background : #F7F0E6;
+    --background : #f7f0e6;
     --food_background : #ecdecb;
+    --navbar :#7d9e5e;
+    --navbar_complementary :#bd86f0;
+    --hover_nav : #9a65cc;
+    --border_compl : #2cdd43;
+    --low_saturation_green:#9ca791;
 }
 header {
-  position: sticky;
-  top: 0;
-  left: 0;
-  background-color: var(--background);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 1rem;
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: var(--navbar);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    min-height: 120px;
+ 
 }
-header nav ul{
-    list-style-type: none;
+
+header nav ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    list-style: none;
+    font-size: 2rem;
 }
+
 header nav ul li a{
     text-decoration: none;
     color: var(--besedilo);
+    padding:10px;
+    color:var(--background)
 }
 header nav ul li a:hover{
-    background-color: var(--poudarek);
-
+   background-color: var(--hover_nav);
+    border-radius: 10px;
+    border: 10px;
+    padding:10px
 }
 .aktivno{
-    color: var(--primary);
-    text-decoration-line:underline;
-    text-decoration-style: wavy;
-}
+    background-color: var(--navbar_complementary);
+    padding: 10px;
+    border-radius: 10px;
+} 
 body {
-  background-color: var(--background);
-  color: var(--besedilo);
-  font-family: "Lato";
-  font-size: 1rem;
+    background-color: var(--background);
+    color: var(--besedilo);
+    font-family: "Lato";
+    font-size: 1rem;
+    margin:0;
 }
 main{
-  width: 100%;
-  max-width: 1100px;
-  margin-inline: auto;
+    width: 100%;
+    max-width: 1100px;
+    margin-inline: auto;
 
+}
+#logo{
+    width: 80px;
+    height: auto
 }
 /*footer*/
 footer{
-    background-color: #3B2416;
-    color: #F7F0E6 ;
-}/*index*/
+    background-color: var(--besedilo);
+    color: var(--background) ;
+}
+footer a{
+    color: var(--navbar_complementary)
+} 
+/*index*/
 
 /* index background img*/
 .index_section{ 
     min-height: 60vh; 
+    border-radius: 30px;
     background-image: url("../slike/background.jpg");
     background-position: center;
     background-size:cover;
     text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.88);
+
 }
+
 .index_section *{
-    background-color: rgba(255, 248, 237, 0.8) ;
+    display: inline-block;
+    padding: 1rem 1.5rem;
+    background-color: rgba(140, 163, 99, 0.863);
+    border-radius: 8px;
+    color: #3B2418 ;
 }
 /*jedi */
 .izpostavljene {
@@ -118,8 +155,13 @@ footer{
     border-style:dashed;
     
 }
+.jedilnik td{
+    padding: 5px;
+}
 .jedilnik th{
     background-color: var(--primary);
+        padding:3px;
+
 }.jedilnik tr:hover{
     background-color: #7ed669;
 }
@@ -133,27 +175,174 @@ td:last-child{
 }
 /*rezervacija*/
 .rezevervacija_form fieldset {
-  display: grid;
-  grid-template-columns: 140px 1fr;
-  gap: 12px;
-  align-items: center;
+    display: grid;
+    grid-template-columns: 140px 1fr;
+    gap: 12px;
+    align-items: center;
+    border: 5px;
+    border-style: groove;
+    border-color: var(--poudarek);
+    border-radius: 6px;
+    margin-bottom: 1rem;
 }
 
-.rezevervacija_form p { /*najbolj annoying thing ever*/
-  display: contents; 
+.rezevervacija_form p { /*najbolj annoying thing ever, makes it act like p-ja ni*/
+    display: contents; 
+    
 }
 
 .rezevervacija_form label {
-  font-size: 1.2rem;
+    font-size: 1.2rem;
 }
 
 .rezevervacija_form input,
-.rezevervacija_form select {
-  width: 100%;
-  padding: 9px;
-  border-width: 1px;
-  border-radius: 7px;
-  border-style: groove;
-  border-color: var(--poudarek);
+.rezevervacija_form select,
+.rezevervacija_form textarea {
+    padding: 9px;
+    border-width: 0.2rem;
+    border-radius: 7px;
+    border-style: groove;
+    border-color: var(--poudarek);
+    background-color: var(--background);
+    font-family: "Lato";
+    font-size: 1.1rem;
+        
 }
 
+.rezevervacija_form .priloznost span{
+    font-family: "Lato";
+    font-size: 1.25rem;
+    user-select: none;
+    cursor: default;
+}
+.rezevervacija_form input:focus,
+.rezevervacija_form select:focus,
+.rezevervacija_form textarea:focus {
+    outline: 2px solid var(--poudarek);
+    outline-offset: 1px;
+}
+.rezevervacija_form [type="checkbox"], input[type="radio"]{
+    appearance: none;
+    margin:1rem;
+    accent-color: var(--navbar);
+    color: var(--background);
+    vertical-align: middle;
+    
+}
+.rezevervacija_form [type="checkbox"]:checked, input[type="radio"]:checked{
+    border-color:var(--poudarek);
+    background: radial-gradient(var(--poudarek) 0 5px, var(--background) 3.5px);
+}
+.rezevervacija_form [type="checkbox"]:focus,
+.rezevervacija_form [type="radio"]:focus{
+    
+    outline: 0px;
+}
+.rezevervacija_form textarea{
+    grid-column: 2;
+    width: 100%;
+    min-height: 10rem;
+    margin: 0;
+    resize: vertical;
+    font-weight: bold;
+    color: var(--besedilo);
+    background-color: var(--background );
+    resize: none;
+ }
+ .podatki{
+    grid-column: 1 / -1;
+ }
+ .rezevervacija_form button {
+    position: relative;
+    left:70%;
+    margin: 0.35rem;
+    margin-bottom: 1rem;
+    padding: 0.8rem;
+    border-width: 3px;
+    border-style: groove;
+    border-color: var(--besedilo);
+    border-radius: 25px;
+    background: var(--navbar);
+    color: var(--background);
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.35);
+    font-size: 1.25rem;
+}
+
+.rezevervacija_form button:hover {
+    background: var(--poudarek);
+}
+.rezevervacija_form button:active{
+    background-color: var(--hover_nav);
+    border-color: var(--border_compl);
+    border-width: 0px;
+}
+.rezevervacija_form legend {
+    padding: 0.35rem;
+    color: var(--besedilo);
+    font-weight: bold;
+    font-family: "Lato";
+    border-radius: 7px;
+    background-color: var(--poudarek);
+    font-size: 1.25rem;
+}
+.rezevervacija_form select, .rezevervacija_form input{
+    font-family: "Lato";
+    color: var(--besedilo);
+    font-weight: 600;
+}
+.rezevervacija_form #reset{
+    background-color:var(--low_saturation_green) ;
+}
+.rezevervacija_form #reset:hover{
+       background: var(--poudarek);
+}
+/*Recepti*/
+
+.recepti .kazalo{
+    text-decoration: none;
+    display: inline-block;
+    padding: 0.55rem;
+    color: var(--besedilo);
+    font-weight: bold;
+    font-family: "Lato";
+    border-radius: 15px;
+    background-color: var(--poudarek);
+    font-size: 1.25rem; 
+    border-style: groove;
+    border-color: var(--besedilo);
+    border-width: 3px;
+}
+.recepti ul{
+    display: flex;
+}
+.recepti li{
+    list-style: none;
+    display: flexbox;
+    margin-left: 0.35rem; 
+    margin-right: 0.35rem;
+    
+}
+.recepti .kazalo:hover{ 
+    background: var(--hover_nav);
+}
+.recepti article{
+    background-color: var(--food_background);
+    border-radius: 10px;
+    border-color: var(--besedilo);
+    border-width: 8px;
+    border-style: inset;
+    box-shadow: 10px 10px;
+    margin-bottom: 10%;
+    padding: 12px;
+}
+.recepti figure{
+    margin: 0;
+    position: relative;
+}
+
+.recepti img {
+    width: 30%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+}

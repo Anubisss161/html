@@ -10,7 +10,7 @@
     </head>
 <body><header>
             <a href="index.html">
-            <img src="slike/logo.svg" alt="Sultanova Kuhinja - Domov">
+                <img src="slike/logo.png" id="logo" alt="Sultanova Kuhinja - Rezervacija">
             </a>
             <nav>
             <ul>
@@ -72,9 +72,11 @@
           <option value="zasebna">Zasebna soba</option>
         </select>
       </p>
-
-      <label>      <p>Priložnost:</p>
-
+      <p class="priloznost">
+        <span class="priloznost">Priložnost:</span>  
+          <span class="priloznost-options">
+      <label >     
+  
         <input type="radio" name="priloznost" value="brez">
         Brez
       </label>
@@ -89,13 +91,19 @@
       <label>
         <input type="radio" name="priloznost" value="poslovno-srecanje">
         Poslovno srečanje
+        
       </label>
+      </span>
+      </p>
     </fieldset>
+
 
     <fieldset>
       <legend>Dodatne želje</legend>
-
-      <p>Prehranske omejitve:</p>
+      
+      <p class="priloznost">
+        <span class="priloznost">Prehranske omejitve:</span>  
+          <span class="priloznost-options">
       <label>
         <input type="checkbox" name="prehrana" value="vegetarijansko">
         Vegetarijansko
@@ -112,14 +120,11 @@
         <input type="checkbox" name="prehrana" value="laktoza">
         Brez laktoze
       </label>
-
-      <p>
-        <label for="opombe">Opombe:</label><br>
-        <textarea id="opombe" name="opombe" cols="50" rows="5"></textarea>
-      </p>
-
-      <p>
-        <label>
+         </span>
+         
+        <label for="opombe">Opombe:</label>
+        <textarea  id="opombe" name="opombe" cols="50" rows="10"></textarea>
+        <label class="podatki">
           <input type="checkbox" name="podatki" value="podatki" required>
           Strinjam se z obdelavo osebnih podatkov
         </label>
@@ -127,7 +132,7 @@
     </fieldset>
 
     <button type="submit">Pošlji rezervacijo</button>
-    <button type="reset">Ponastavi</button>
+    <button id="reset" type="reset">Ponastavi</button>
   </form>
   </main>
   <footer>
