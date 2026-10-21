@@ -163,7 +163,7 @@ footer a{
         padding:3px;
 
 }.jedilnik tr:hover{
-    background-color: #7ed669;
+    background-color: var(--border_compl);
 }
 .colored_row{
 
