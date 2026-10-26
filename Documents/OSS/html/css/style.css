@@ -74,6 +74,9 @@ main{
     width: 80px;
     height: auto
 }
+img {
+    max-width: 100%;
+}
 /*footer*/
 footer{
     background-color: var(--besedilo);
@@ -151,11 +154,17 @@ footer a{
 /*jedilnik.html*/
 .jedilnik table{
     width:100%;
+    min-width: 50rem;
     border-collapse: collapse;
     border-color: var(--besedilo);
     border-width: 2px;
     border-style:dashed;
     
+}
+.table-wrapper {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: auto;
 }
 .jedilnik td{
     padding: 5px;
@@ -361,7 +370,7 @@ td:last-child{
 }
 .recepti article a{
     position: relative;
-    left:190%;
+    left:0;
     grid-column: 1 / -1;
     color:var(--background);
     font-weight: 700;
@@ -477,7 +486,7 @@ iframe{
     display: none;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 599px) {
     header {
         flex-wrap: wrap;
     }
@@ -522,6 +531,11 @@ iframe{
         font-size: 1rem;
     }
 
+    .hamburger ~ nav ul li a {
+        display: block;
+        padding: 0.75rem;
+    }
+
     main {
         padding: 0 0.75rem;
     }
@@ -542,10 +556,6 @@ iframe{
         grid-column: 1 / -1;
     }
 
-    .jedilnik table {
-        display: block;
-        overflow-x: auto;
-    }
 
     .rezevervacija_form fieldset {
         grid-template-columns: 1fr;
@@ -553,6 +563,12 @@ iframe{
 
     .rezevervacija_form textarea {
         grid-column: 1;
+    }
+
+    .rezevervacija_form input:not([type="checkbox"]):not([type="radio"]),
+    .rezevervacija_form select,
+    .rezevervacija_form textarea {
+        width: 100%;
     }
 
     .rezevervacija_form button {
@@ -591,11 +607,12 @@ iframe{
     }
 }
 
-@media (min-width: 601px) and (max-width: 1000px) {
+@media (min-width: 600px) and (max-width: 1000px) {
     header nav ul {
         flex-wrap: wrap;
         gap: 0.5rem;
         font-size: 1.3rem;
+        
     }
 
     main {
