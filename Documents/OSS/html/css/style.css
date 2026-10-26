@@ -10,8 +10,8 @@
     --background : #f7f0e6;
     --food_background : #ecdecb;
     --navbar :#7d9e5e;
-    --navbar_complementary :#bd86f0;
-    --hover_nav : #9a65cc;
+    --navbar_complementary :#FFF8ED ;
+    --hover_nav : #C46A3A;
     --border_compl : #2cdd43;
     --low_saturation_green:#9ca791;
 }
@@ -53,6 +53,7 @@ header nav ul li a:hover{
 }
 .aktivno{
     background-color: var(--navbar_complementary);
+    color:var(--besedilo);
     padding: 10px;
     border-radius: 10px;
 } 
@@ -105,7 +106,8 @@ footer a{
 /*jedi */
 .izpostavljene {
     display: grid;
-    gap: 16px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
 }
 
 .izpostavljene h2 { /* bscly makea item 1 ( h2 v ton primere ) ka spanna 4 columne, torej se jedi vrede prikazejo*/
@@ -469,4 +471,188 @@ td:last-child{
 iframe{
     width: 100%;
     height: 400px;
+}
+.hamburger,
+.hamburger_label {
+    display: none;
+}
+
+@media (max-width: 600px) {
+    header {
+        flex-wrap: wrap;
+    }
+
+    header nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.25rem;
+        font-size: 1rem;
+    }
+
+    .hamburger {
+        display: block;
+        position: absolute;
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+
+    .hamburger_label {
+        display: block;
+        margin-left: auto;
+        padding: 0.6rem;
+        color: var(--background);
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+
+    .hamburger ~ nav {
+        display: none;
+        flex: 1 0 100%;
+    }
+
+    .hamburger:checked ~ nav {
+        display: block;
+    }
+
+    .hamburger ~ nav ul {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0.25rem;
+        font-size: 1rem;
+    }
+
+    main {
+        padding: 0 0.75rem;
+    }
+
+    .index_section {
+        min-height: 30rem;
+    }
+
+    .index_section * {
+        padding: 0.75rem;
+    }
+
+    .izpostavljene {
+        grid-template-columns: 1fr;
+    }
+
+    .izpostavljene h2 {
+        grid-column: 1 / -1;
+    }
+
+    .jedilnik table {
+        display: block;
+        overflow-x: auto;
+    }
+
+    .rezevervacija_form fieldset {
+        grid-template-columns: 1fr;
+    }
+
+    .rezevervacija_form textarea {
+        grid-column: 1;
+    }
+
+    .rezevervacija_form button {
+        left: 0;
+    }
+
+    .recepti > ul {
+        flex-wrap: wrap;
+        padding-left: 0;
+    }
+
+    .recepti article {
+        grid-template-columns: 1fr;
+    }
+
+    .recepti article a {
+        left: 0;
+    }
+
+    .o_nas_first {
+        grid-template-columns: 1fr;
+    }
+
+    .o_nas_first #wtf {
+        margin-top: 0;
+    }
+
+    .o_nas_first figure {
+        grid-column: 1;
+        grid-row: auto;
+        height: auto;
+    }
+
+    .o_nas_delovni table {
+        width: 100%;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 1000px) {
+    header nav ul {
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        font-size: 1.3rem;
+    }
+
+    main {
+        padding: 0 1rem;
+    }
+
+    .izpostavljene {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .izpostavljene h2 {
+        grid-column: 1 / -1;
+    }
+
+    .rezevervacija_form fieldset {
+        grid-template-columns: 8rem 1fr;
+    }
+
+    .rezevervacija_form button {
+        left: 0;
+    }
+
+    .recepti > ul {
+        flex-wrap: wrap;
+        padding-left: 0;
+    }
+
+    .recepti article a {
+        left: 0;
+    }
+
+    .o_nas_first {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .o_nas_first #wtf {
+        margin-top: 0;
+    }
+
+    .o_nas_first figure {
+        grid-column: 2;
+        grid-row: auto;
+        height: auto;
+    }
+
+    .o_nas_delovni table {
+        width: 100%;
+    }
+}
+
+.index_section h1 .fa-house-chimney, .index_section .fa-clipboard {
+    background-color: transparent; 
+    padding: 0;;
+}
+
+.index_section a {
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
 }
